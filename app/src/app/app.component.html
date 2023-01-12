@@ -1,16 +1,17 @@
 <h1>{{title}}</h1>
-<!-- <h2 *ngIf="showData else ngElse">Hello World</h2>
 
-<ng-template #ngElse>
-  <h1>No Data</h1>
-</ng-template> -->
-
-<h2 *ngIf="showData; then ifBlock else elseBlock"></h2>
-
-<ng-template #ifBlock>
-  <h2>This is IF block</h2>
+<ng-template [ngIf]="color === 'red'">
+  <h1 style="color:red">Red Color</h1>
 </ng-template>
 
-<ng-template #elseBlock>
-  <h2>This is ELSE block</h2>
+<ng-template [ngIf]="color === 'green'">
+  <h1 style="color:green">Green Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color === 'blue'">
+  <h1 style="color:blue">Blue Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="color === 'pink'">
+  <h1 style="color:pink">Pink Color</h1>
 </ng-template>
