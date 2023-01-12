@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  value:string = ""
   myFun(val:string){
+    this.value = val;
     console.log(val)
   }
 }
