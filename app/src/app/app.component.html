@@ -1,4 +1,4 @@
 <h1>{{title}}</h1>
-<input type="text" name="name" placeholder="Enter a value" #box>
-<button (click)="myFun(box.value)">Click Me</button>
-<h3>{{value}}</h3>
+<button (click)="myFun('add')">+</button>
+<span>{{value}}</span>
+<button (click)="myFun('sub')">-</button>
