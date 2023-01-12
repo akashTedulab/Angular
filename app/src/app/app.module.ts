@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbdCarouselBasic } from './carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +19,10 @@ import { NgbdCarouselBasic } from './carousel/carousel.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule, 
-    NgbdCarouselBasic
+    NgbModule,
+    BrowserAnimationsModule, 
+    MatSlideToggleModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
