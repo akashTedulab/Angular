@@ -1,21 +1,2 @@
-<h1>Basic Angular Form</h1>
-<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
-    <input type="text" ngModel  name="username" placeholder="Enter your name">
-    <br>
-    <br>
-    <input type="email" ngModel name="email" placeholder="Enter your email">
-    <br>
-    <br>
-    <input type="password" ngModel name="password" placeholder="Enter your password">
-    <br>
-    <br>
-    <button>Submit</button>
-</form>
-
-<div>
-    <ul>
-        <li>{{userData.username}}</li>
-        <li>{{userData.email}}</li>
-        <li>{{userData.password}}</li>
-    </ul>
-</div>
+<h1 *ngIf="show">Basic Angular Form</h1>
+<button (click)="toggle()">Toggle</button>

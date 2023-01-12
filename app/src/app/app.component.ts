@@ -8,10 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Angular Tutorials';
-  userData:any = {}
-  getData(val:NgForm){
-    console.log(val)
-    this.userData = val;
+  show = true;
+  toggle(){
+    this.show = !this.show
   }
 }
 
