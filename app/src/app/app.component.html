@@ -1,2 +1,6 @@
 <h1>{{title}}</h1>
-<button (click)="myFun('Hello')">Alert</button>
+<input type="text" (keyup)="myFun(box.value)" #box placeholder="Enter a value" name="name">
+<input type="text" (keydown)="myFun(box.value)" #box placeholder="Enter a value" name="name">
+<input type="text" (input)="myFun(box.value)" #box placeholder="Enter a value" name="name">
+<input type="text" (blur)="myFun(box.value)" #box placeholder="Enter a value" name="name">
+<input type="text" (mouseover)="myFun(box.value)" #box placeholder="Enter a value" name="name">

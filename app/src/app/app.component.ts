@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  fname = 'Akash';
-  lname = 'Tayde'
   myFun(val:string){
-    alert(val)
-    alert(this.fname)
-    alert(this.lname)
+    console.log(val)
   }
 }
