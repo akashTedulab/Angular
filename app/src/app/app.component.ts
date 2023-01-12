@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  value:number = 0;
-  myFun(val:string){
-    val === 'add' ? this.value++ : this.value-- 
-  }
+  name:string ="Akash";
+  disable = false;
 }
