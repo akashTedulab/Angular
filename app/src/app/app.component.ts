@@ -6,12 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  color = 'red';
-  bgColor = 'blue';
-  center = 'center'
-  myFun(){
-    this.color = 'blue';
-    this.bgColor = 'red'
-  }
+  title = 'Angular Tutorials';
 }
