@@ -1,12 +1,2 @@
-<h1>{{title}}</h1>
-<h1 *ngFor="let friend of friends">Anime Friends : {{friend}}</h1>
-
-<!-- For loop -->
-<ul *ngFor="let character of charDetails">
-  <li>Main Lead Name: {{character.name}} -- Age: {{character.age}} -- Anime: {{character.anime}}</li>
-
-  <!-- Nested For loop -->
-  <ul *ngFor="let user of character.otherChar">
-    <li>{{user}}</li>
-  </ul>
-</ul>
+<h1 [style.color]="color" [style.backgroundColor]="bgColor" [style.textAlign]="center">{{title}}</h1>
+<button (click)="myFun()">Change style</button>
