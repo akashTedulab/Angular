@@ -1,9 +1,12 @@
 <h1>{{title}}</h1>
+<h1 *ngFor="let friend of friends">Anime Friends : {{friend}}</h1>
 
-<div [ngSwitch]="color">
-  <h2 *ngSwitchCase="'red'" style="color:red">Red color</h2>
-  <h2 *ngSwitchCase="'blue'" style="color:blue">Blue color</h2>
-  <h2 *ngSwitchCase="'green'" style="color:green">Green color</h2>
-  <h2 *ngSwitchCase="'yellow'" style="color:yellow">Yellow color</h2>
-  <h2 *ngSwitchDefault="" style="color:Black">Default Color is Balck</h2>
-</div>
+<!-- For loop -->
+<ul *ngFor="let character of charDetails">
+  <li>Main Lead Name: {{character.name}} -- Age: {{character.age}} -- Anime: {{character.anime}}</li>
+
+  <!-- Nested For loop -->
+  <ul *ngFor="let user of character.otherChar">
+    <li>{{user}}</li>
+  </ul>
+</ul>
