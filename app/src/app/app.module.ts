@@ -8,13 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
-import { UserDetailsComponent } from './user-details/user-details.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,4 +25,5 @@ import { UserDetailsComponent } from './user-details/user-details.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
