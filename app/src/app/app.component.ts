@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
+ data = "X"
  updateData(item:string){
   console.log(item)
+  this.data = item;
  }
 }
 

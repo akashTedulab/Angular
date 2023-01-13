@@ -1,1 +1,5 @@
 <p>Child Works !</p>
+<input type="text" name="name" placeholder="Child to Parent" #box>
+<br />
+<br />
+<button (click)="updateDataEvent.emit(box.value)">Click</button>
