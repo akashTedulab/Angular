@@ -8,13 +8,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- list:any[] = []
- addTask(val:string){
-  this.list.push({id:this.list.length, name:val})
- }
- deleteItem(id:number){
-  this.list = this.list.filter( item => item.id != id)
-  console.log(id)
+ data = 10;
+ updateChild(){
+  this.data = Math.floor(Math.random()*10)
  }
 }
 

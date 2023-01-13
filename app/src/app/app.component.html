@@ -1,9 +1,5 @@
 <h1>{{title}}</h1>
-<h2>Basic TODO List</h2>
+<h2>Send Data Parent to Child Component</h2>
 
-<input type="text" name="todolist" placeholder="Enter Your Task" #box>
-<button (click)="addTask(box.value)">ADD TASK</button>
-
-<ul *ngFor="let item of list">
-  <li>{{item.id}} {{item.name}} <button (click)="deleteItem(item.id)">Delete</button></li>
-</ul>
+<app-child [item]="data"></app-child>
+<button (click)="updateChild()">Click</button>
