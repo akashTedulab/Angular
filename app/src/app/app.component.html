@@ -1,5 +1,4 @@
 <h1>{{title}}</h1>
-<h2>Send Data Parent to Child Component</h2>
+<h2>Send Data Child to Parent Component</h2>
 
-<app-child [item]="data"></app-child>
-<button (click)="updateChild()">Click</button>
+<app-child (updateDataEvent)="updateData($event)"></app-child>
