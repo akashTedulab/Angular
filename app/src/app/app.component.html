@@ -1,18 +1,9 @@
 <h1>{{title}}</h1>
-<h1>To Add Material UI - ng add @angular/material</h1>
+<h2>Basic TODO List</h2>
 
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<input type="text" name="todolist" placeholder="Enter Your Task" #box>
+<button (click)="addTask(box.value)">ADD TASK</button>
 
-<section>
-    <div class="example-label">Raised</div>
-    <div class="example-button-row">
-      <button mat-raised-button>Basic</button>
-      <button mat-raised-button color="primary">Primary</button>
-      <button mat-raised-button color="accent">Accent</button>
-      <button mat-raised-button color="warn">Warn</button>
-      <button mat-raised-button disabled>Disabled</button>
-      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-    </div>
-  </section>
-
- 
+<ul *ngFor="let item of list">
+  <li>{{item.id}} {{item.name}} <button (click)="deleteItem(item.id)">Delete</button></li>
+</ul>
