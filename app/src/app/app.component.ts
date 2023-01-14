@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Basic of Pipes in Angular";
- today = Date();
+ title2 = "Advance Pipes";
 
- capString(item:string){
-  return item.toUpperCase();
+ user = {
+  name: "akash tayde",
+  role: "JSE",
+  company: "Edulab"
  }
 }
 
