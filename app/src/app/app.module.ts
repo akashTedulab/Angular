@@ -8,10 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    UsdInrPipe,
   ],
   imports: [
     BrowserModule,

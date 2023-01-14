@@ -1,26 +1,5 @@
 <h1>{{title}}</h1>
 <h2>{{title2}}</h2>
 <br /> <br />
-<!-- Slice method with params -->
-<h4>{{ title2 | slice : 3 }}</h4>
-<h4>{{ title2 | slice : 3 : 6 }}</h4>
-<!-- Using Two Pipes at same time -->
-<h4>{{ title2 | slice : 3 : 6 | uppercase }}</h4>
-<!-- Displaying objects with pipes -->
-<h4>{{user | json | uppercase}}</h4>
 
-<!-- Pipes with numbers -->
-<!-- Minimizing numbers with actual digits  -->
-<h4>{{2000.3000 | number : '2.2-3'}}</h4>
-<!-- This will not accept starting 0's -->
-<h4>{{000002000.3000 | number : '2.2-3'}}</h4>
-<!-- Maximizing numbers with 0's -->
-<h4>{{2.3 | number : '4.4-6'}}</h4>
-
-<!-- Currency Pipes -->
-<h4>{{200 | currency: 'USD'}}</h4>
-<h4>{{200 | currency: 'GBP'}}</h4>
-<h4>{{200 | currency: 'INR'}}</h4>
-<!-- Capitalizing  -->
-<h4>{{"hello how are you?" | titlecase}}</h4>
-
+<h3>{{100 | usdInr : 74}}</h3>

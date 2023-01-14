@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Advance Pipes";
+ title2 = "Custom Pipes";
 
  user = {
   name: "akash tayde",
