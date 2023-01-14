@@ -3,10 +3,17 @@
 <br /> <br />
 
 <form #loginForm="ngForm" (ngSubmit)="getInfo(loginForm.value)">
-<input type="text" ngModel name="name" placeholder="Enter name">
-<br /> <br />
-<input type="password" ngModel name="password" placeholder="Enter password">
-<br /> <br />
-<button>Login</button>
+    <input type="text" name="name" pattern="[a-zA-Z]+$" required #name="ngModel" placeholder="Enter your name" ngModel>
+    <br />
+    <span *ngIf="name.invalid && name.touched" style="color:red">Enter valid name</span>
+    <br />
+    <input type="email" name="email" email required #email="ngModel" placeholder="Enter your name" ngModel>
+    <br />
+    <span *ngIf="email.invalid && email.touched" style="color:red">Enter valid Email</span>
+    <br />
+    <input type="password" name="password" minlength="8" required #password="ngModel" placeholder="Enter your Password" ngModel>
+    <br />
+    <span *ngIf="password.invalid && password.touched" style="color:red">Enter valid password</span>
+    <br />
+    <button [disabled]="loginForm.invalid">Login</button>
 </form>
-<button (click)="getInfo(loginForm.value)">Login here</button>

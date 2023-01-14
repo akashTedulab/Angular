@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
  title = 'Angular Tutorials';
  title2 = "Template Driven Form";
-
- getInfo(val:{}){
+ getInfo(val:any){  
   console.log(val)
  }
 }

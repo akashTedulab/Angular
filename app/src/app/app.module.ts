@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,11 +16,11 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     NgbModule,
     BrowserAnimationsModule, 
     MatSlideToggleModule,
     MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
