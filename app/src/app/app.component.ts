@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +9,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Custom Pipes";
+ title2 = "Template Driven Form";
 
- user = {
-  name: "akash tayde",
-  role: "JSE",
-  company: "Edulab"
+ getInfo(val:{}){
+  console.log(val)
  }
 }
 
