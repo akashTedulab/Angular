@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { NoPageComponent } from './no-page/no-page.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AboutComponent } from './about/about.component';
     UserComponent,
     HomeComponent,
     AboutComponent,
+    NoPageComponent,
   ],
   imports: [
     BrowserModule,
