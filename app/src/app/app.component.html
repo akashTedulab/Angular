@@ -3,9 +3,17 @@
 <br /> <br />
 
 <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <input type="text" name="username" placeholder="Enter your username" formControlName="username">
-    <br /><br />
-    <input type="password" name="password" placeholder="Enter your password" formControlName="password">
-    <br /><br />
-    <button>Submit</button>
+    <input type="text" placeholder="Enter your username" name="username" formControlName="username">
+    <br />
+    <span style="color:red" *ngIf="user && user.invalid && user.touched">Username is required</span>
+    <br />
+    <input type="email" placeholder="Enter your email" name="email" formControlName="email">
+    <br />
+    <span style="color:red" *ngIf="email && email.invalid && email.touched">Please Enter valid Email</span>
+    <br />
+    <input type="password" placeholder="Enter your Password" name="password" formControlName="password">
+    <br />
+    <span style="color:red" *ngIf="password && password.invalid && password.touched">Please Enter valid password</span>
+    <br/>
+    <button [disabled]="loginForm.invalid">Submit</button>
 </form>
