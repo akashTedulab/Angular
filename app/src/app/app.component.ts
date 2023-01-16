@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Directives in Angular";
+ title2 = "Basic Routing";
  
 }
 

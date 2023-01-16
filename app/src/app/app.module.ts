@@ -7,14 +7,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
-import { RedElDirective } from './red-el.directive';
-import { BlueElDirective } from './blue-el.directive';
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    RedElDirective,
-    BlueElDirective,
+    UserComponent,
+    HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
