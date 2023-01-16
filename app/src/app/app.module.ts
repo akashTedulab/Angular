@@ -7,11 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
-import { ReactiveFormsModule } from '@angular/forms';
+import { RedElDirective } from './red-el.directive';
+import { BlueElDirective } from './blue-el.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    RedElDirective,
+    BlueElDirective,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule, 
     MatSlideToggleModule,
     MatButtonModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
