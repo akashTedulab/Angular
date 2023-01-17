@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserdataService } from './services/userdata.service';
+import { UsersdataService } from './services/usersdata.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,11 @@ import { UserdataService } from './services/userdata.service';
 export class AppComponent {
  title = 'Angular Tutorials';
  title2 = "Service in Angular";
- users:any;
- constructor(private userdata:UserdataService){
-  console.log("userdata", userdata.users())
-  this.users = userdata.users()
+ users : any;
+ constructor(private userData:UsersdataService){
+  userData.users().subscribe((data)=>{
+    console.log(this.users = data)
+  })
  }
 }
 

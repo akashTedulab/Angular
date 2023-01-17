@@ -1,7 +1,7 @@
-.footer{
+.footer {
     background-color: skyblue;
-    color: white;
+    color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
 }
