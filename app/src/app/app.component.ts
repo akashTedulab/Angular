@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserdataService } from './services/userdata.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Child Routing";
- 
+ title2 = "Service in Angular";
+ users:any;
+ constructor(private userdata:UserdataService){
+  console.log("userdata", userdata.users())
+  this.users = userdata.users()
+ }
 }
 
