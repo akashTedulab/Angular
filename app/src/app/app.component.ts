@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ServiceService } from './services/service.service';
+import { dataType } from './interface';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,13 +9,16 @@ import { ServiceService } from './services/service.service';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Service in Angular";
- users : any;
-  constructor(private userData:ServiceService) {
-    userData.user().subscribe((data)=>{
-      console.log(data);
-      this.users = data
-    });
+ title2 = "Model and Interface";
+
+ getData(){
+  const data:dataType = {
+    name: 'akash',
+    id: 10,
+    indian: true,
+    address: '123 badlapur'
   }
+  return data;
+ }
 }
 
