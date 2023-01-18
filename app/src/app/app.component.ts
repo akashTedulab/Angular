@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
  title = 'Angular Tutorials';
- title2 = "Model and Interface";
+ title2 = "Routing Module";
 }
 

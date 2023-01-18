@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { UsersModule } from './users/users.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -9,6 +8,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AdminModule } from './admin/admin.module'
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     HttpClientModule,
     FormsModule,
-    UsersModule
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
