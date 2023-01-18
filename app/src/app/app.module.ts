@@ -8,8 +8,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AdminModule } from './admin/admin.module'
-import { UserModule } from './user/user.module';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +23,6 @@ import { UserModule } from './user/user.module';
     MatButtonModule,
     HttpClientModule,
     FormsModule,
-    AdminModule,
-    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

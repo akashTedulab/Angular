@@ -4,12 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
-  {
-    path: 'admin', children: [
-      { path: 'login', component: LoginComponent },
-      { path: 'list', component: ListComponent }
-    ]
-  }
+  {path:'login', component:LoginComponent},
+  {path:'list', component:ListComponent}
 ];
 
 @NgModule({
