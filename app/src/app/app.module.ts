@@ -8,11 +8,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UserlistComponent } from './userlist/userlist.component';
+import { AdminlistComponent } from './adminlist/adminlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    UserlistComponent,
+    AdminlistComponent,
   ],
   imports: [
     BrowserModule,
