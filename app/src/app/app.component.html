@@ -5,7 +5,7 @@
 <form [formGroup]="loginForm" (ngSubmit)="login()">
     <input type="text" placeholder="Enter your username" name="username" formControlName="username">
     <br />
-    <span style="color:red" *ngIf="user && user.invalid && user.touched">Username is required</span>
+    <span style="color:red" *ngIf="username && username.invalid && username.touched">Username is required</span>
     <br />
     <input type="email" placeholder="Enter your email" name="email" formControlName="email">
     <br />
